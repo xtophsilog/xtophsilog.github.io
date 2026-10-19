@@ -1,0 +1,14 @@
+{
+  "name": "react-node-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio — React (Vite) front end + Node.js/Express API with SQLite/Turso and an admin dashboard",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install --include=dev",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "seed": "npm --prefix server run seed",
+    "db:copy": "npm --prefix server run db:copy"
+  }
+}

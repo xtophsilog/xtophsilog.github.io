@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Express + SQLite/Turso REST API for the React portfolio",
+  "scripts": {
+    "dev": "node --watch --disable-warning=ExperimentalWarning --env-file-if-exists=.env src/index.js",
+    "start": "node --disable-warning=ExperimentalWarning --env-file-if-exists=.env src/index.js",
+    "seed": "node --disable-warning=ExperimentalWarning --env-file-if-exists=.env src/seed.js --force",
+    "db:copy": "node --env-file-if-exists=.env src/copy-to-remote.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.6",
+    "zod": "^4.1.0"
+  }
+}
